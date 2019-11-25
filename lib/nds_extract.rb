@@ -10,14 +10,10 @@ require 'directors_database'
 def directors_totals(nds)
   i = 0
   result = {}
-  while i < directors_database.length do
-    h = 0
-    sum = 0
-      while h < directors_database[i][:movies].length do
-        sum += directors_database[i][:movies][h][:worldwide_gross]  
-        h += 1
-      end
-    result[directors_database[i][:name]] = sum
+  while i < nds.length do
+    dir = nds[i]
+    gross_for_director(dir)
+    result[dir] = sum
     i += 1
   end
   return result
