@@ -12,7 +12,7 @@ def directors_totals(nds)
   result = {}
   while i < nds.length do
     dir = nds[i]
-    gross_for_director(dir)
+    sum = gross_for_director(dir)
     result[dir] = sum
     i += 1
   end
