@@ -1,0 +1,13 @@
+
+puts "hi"
+
+#def gross_for_director(director_data)
+ # puts director_data
+  #h = 0
+  #sum = 0
+   #   while h < directors_database[director_data][:movies].length do
+    #    sum += directors_database[director_data][:movies][h][:worldwide_gross]  
+     #   h += 1
+      #end
+#    sum
+#end
